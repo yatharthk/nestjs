@@ -1,0 +1,22 @@
+<header>
+  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-expand-lg navbar-dark bg-dark">
+      <a routerLink='/' class="navbar-brand"><div class="logo_box"></div></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['home']" routerLinkactive='active'>Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['admin']" routerLinkactive="active">Admin</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+</div>
+</header>
